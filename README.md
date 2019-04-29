@@ -79,6 +79,25 @@ personal technology station
 - promise显著地简化了我们处理异步代码的过程。通过使用then方法来生成promise链，我们就能轻易地处理异步时序依赖。并行执行多个异步任务也同样简单：仅使用Promise.all方法即可。
 - 通过将生成器和promise相结合我们能够使用同步代码来简化异步任务。
 
+### Part Three 对象
+
+### 3.1 面向对象与原型
+
+深入对象原型与新特性
+- JavaScript对象是属性名与属性值的集合。
+- JavaScript使用原型。
+- 每个对象上都具有原型的引用，搜索指定的属性时，如果对象本身不存在该属性，则可以代理到原型上进行搜索。对象的原型也可以具有原型，以此类推，形成原型链。
+- 可以通过Object.setPrototypeOf方法定义对象的原型。
+- 原型与构造函数密切相关。每个函数都具有原型属性，该函数创建的对象的原型，就是函数本身。
+- 函数原型对象具有constructor属性，该属性指向函数本身。该函数创建的全部对象均访问该属性，constructor属性还可用于判断对象是否是由指定的函数创建的。
+- 在JavaScript中，几乎所有的内容在运行时都会发生变化，包括对象的原型和函数的原型。
+- 如果我们希望Ninja构造函数创建的实例都可以“继承”（更准确地说，可以访问）Person构造函数的属性，那么，将Ninja构造函数的原型设置为Person类的实例。
+- 在JavaScript中，原型具有属性（如configurable、enumerable、writable）。这些属性可通过内置的Object.defineProperty方法进行定义。
+- JavaScript ES6引入关键字class，使得我们可以更方便地实现模拟类。在底层仍然是使用原型实现的。
+- 使用extends可以更优雅地实现继承。
+
+
+
 
 
 
