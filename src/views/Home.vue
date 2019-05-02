@@ -5,12 +5,18 @@
   </div>
 </template>
 
+
 <script lang="ts">
 import Vue from 'vue';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 export default Vue.extend({
   name: 'home',
+  methods: {
+    getES6Feature() {
+      console.log(`I am VScode`);
+    }
+  },
   components: {
     HelloWorld,
   },
