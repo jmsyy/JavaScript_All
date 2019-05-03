@@ -1,0 +1,1 @@
+## JavaScript(《忍者秘籍2》) md(ninjaCheats2)

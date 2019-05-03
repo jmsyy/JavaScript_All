@@ -7,18 +7,20 @@
 
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Vue from "vue";
+import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default Vue.extend({
-  name: 'home',
+  name: "home",
   methods: {
     getES6Feature() {
+      //* 小明
+
       console.log(`I am VScode`);
     }
   },
   components: {
-    HelloWorld,
-  },
+    HelloWorld
+  }
 });
 </script>
